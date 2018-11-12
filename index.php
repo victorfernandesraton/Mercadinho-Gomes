@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,24 +9,23 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-
+        
         <!-- Hover.css -->
         <link rel="stylesheet" href="css/hover-min.css">
-
+        
         <!-- Animate.css -->
         <link rel="stylesheet" href="css/animate.min.css">
-
+        
         <!-- CSS do Desenvolvedor -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/styleUsuarios.css">
+        <link rel="stylesheet" type="text/css" href="css/styleHome.css">
         <link rel="stylesheet" type="text/css" href="css/responsiveContato.css">
         <link rel="stylesheet" type="text/css" href="css/styleNavbar.css">
     </head>
-
     <body>
         <!-- Navbar -->
         <header>
-            <nav class="navbar navbar-expand-lg fixed-top cor-navbar">
+            <nav class="navbar navbar-expand-lg fixed-top cor-navbar">  
                 <div class="container">
                     <a class="navbar-brand" href=""><img src="icones/logo.png" width="150"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
@@ -37,6 +35,7 @@
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
                                 <a class="nav-link hvr-underline-from-center" href="index.php">Início</a>
+                                <div class="pg-atual"></div>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link hvr-underline-from-center" href="QuemSomos.html">Quem Somos</a>
@@ -46,11 +45,10 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link hvr-underline-from-center" href="usuarios.php">Usuários</a>
-                                <div class="pg-atual"></div>
                             </li>
                         </ul>
                     </div>
-                </div>
+                </div>    
             </nav>
         </header>
 
@@ -59,7 +57,7 @@
             <div class="toggle">
                 <p class="img-toggle"></p>
             </div>
-            <h2>CONTATE-NOS</h2>
+            <h2 >CONTATE-NOS</h2>
             <div class="formBox scroll">
                 <form action="" method="post">
                     <div class="inputBox">
@@ -72,7 +70,7 @@
                     </div>
                     <div class="inputBox">
                         <div class="inputText">Telefone</div>
-                        <input type="text" name="" class="input">
+                            <input type="rel" name="" class="input">
                     </div>
                     <div class="inputBox">
                         <div class="inputText">Mensagem</div>
@@ -85,81 +83,29 @@
             </div>
         </div>
 
-        <!-- Formulário -->
-        <div class="container-fluid">
-            <div class="container">
-                <h3 class="tituloCadastro">Não possui uma cadastro? Solicite um.</h3>
-                <div class="caixaForm">
-                    <form action="" method="post">
-                        <div class="row">
-                            <div class="cadastro">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="caixaInput">
-                                            <div class="textoInput">Nome Completo</div>
-                                            <input type="text" name="" class="entrada">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="caixaInput">
-                                            <div class="textoInput">E-mail</div>
-                                            <input type="text" name="" class="entrada">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="caixaInput">
-                                            <div class="textoInput">Confirmar E-mail</div>
-                                            <input type="text" name="" class="entrada">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="caixaInput">
-                                            <div class="textoInput">CPF</div>
-                                            <input type="text" name="" class="entrada">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="caixaInput">
-                                            <div class="textoInput">Telefone/Celular</div>
-                                            <input type="text" name="" class="entrada">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="caixaInput">
-                                            <div class="textoInput">Endereço</div>
-                                            <input type="text" name="" class="entrada">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-6 hvr-bounce-in">
-                                        <div class="caixaInput">
-                                            <input type="submit" value="Enviar" class="btn-login">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 hvr-bounce-out">
-                                        <div class="caixaInput">
-                                            <input type="button" value="Voltar" onClick="history.go(-1)" class="btn-login">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+        <!-- Slide -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <!--  -->
+            <ol class="carousel-indicators">
+                <div class="mx-2 indicador" data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></div>
+                <div class="mx-2 indicador" data-target="#carouselExampleIndicators" data-slide-to="1"></div>
+                <div class="mx-2 indicador" data-target="#carouselExampleIndicators" data-slide-to="2"></div>
+            </ol>
+            
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active" id="slide01"></div>
+                <div class="carousel-item" id="slide02"></div>
+                <div class="carousel-item" id="slide03"></div>
             </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <img src="icones/left-arrow.png" alt="">
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <img src="icones/right-arrow.png" alt="">
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-        <!-- Fim de Usuario -->
 
         <!-- Footer -->
         <footer>
@@ -173,15 +119,15 @@
                     </div>
                     <div class="mg-redes text-center col-md-3 col-lg-2 justify-content-center">
                         <img src="icones/telephone-handle-silhouette.png" width="25">
-                        <span class="ml-1">(71)9XXXX-XXXX</span>
+                        <span class="ml-2">(71)9XXXX-XXXX</span><br>
                     </div>
                     <div class="mg-redes text-center col-lg-3 col-md-3 justify-content-center">
                         <img src="icones/message-closed-envelope.png" width="25">
-                        <span class="ml-1">email@contato.com</span>
+                        <span class="ml-2">email@contato.com</span><br>
                     </div>
                     <div class="mg-redes text-center col-lg-4 col-md-12 justify-content-center">
                         <img src="icones/wall-clock.png" width="25">
-                        <span class="ml-1 justify-content-center">Segunda a Sexta: 8h às 18h Sábados: 8h às 15h</span>
+                        <span class="ml-2 justify-content-center">Segunda a Sexta: 8h às 18h Sábados: 8h às 15h</span>
                     </div>
                 </div>
             </div>    
@@ -195,6 +141,7 @@
         <script src="js/popper.js"></script>
         <script src="js/bootstrap.js"></script>
         <script src="js/functions.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
     </body>
 
 </html>

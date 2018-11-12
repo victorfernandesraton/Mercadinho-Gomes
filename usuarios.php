@@ -1,6 +1,8 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
-
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,26 +10,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="icones/online-shopping.ico">
 
-        <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS -->
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-
+        
         <!-- Hover.css -->
         <link rel="stylesheet" href="css/hover-min.css">
-
+        
         <!-- Animate.css -->
         <link rel="stylesheet" href="css/animate.min.css">
-
+        
         <!-- CSS do Desenvolvedor -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/styleUsuarios.css">
         <link rel="stylesheet" type="text/css" href="css/responsiveContato.css">
         <link rel="stylesheet" type="text/css" href="css/styleNavbar.css">
     </head>
-
     <body>
         <!-- Navbar -->
         <header>
-            <nav class="navbar navbar-expand-lg fixed-top cor-navbar">
+            <nav class="navbar navbar-expand-lg fixed-top cor-navbar">  
                 <div class="container">
                     <a class="navbar-brand" href=""><img src="icones/logo.png" width="150"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
@@ -50,7 +51,7 @@
                             </li>
                         </ul>
                     </div>
-                </div>
+                </div>    
             </nav>
         </header>
 
@@ -59,7 +60,7 @@
             <div class="toggle">
                 <p class="img-toggle"></p>
             </div>
-            <h2>CONTATE-NOS</h2>
+            <h2 >CONTATE-NOS</h2>
             <div class="formBox scroll">
                 <form action="" method="post">
                     <div class="inputBox">
@@ -85,69 +86,59 @@
             </div>
         </div>
 
-        <!-- Formulário -->
-        <div class="container-fluid">
+        <!-- Usuario -->
+        <div class="container-fluid" align="center">
             <div class="container">
-                <h3 class="tituloCadastro">Não possui uma cadastro? Solicite um.</h3>
                 <div class="caixaForm">
-                    <form action="" method="post">
+                    <form action="fun/login.php" method="POST">
                         <div class="row">
+                            <div class="col-12">
+                                <h1>LOGIN</h1>
+                            </div>
                             <div class="cadastro">
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="caixaInput">
-                                            <div class="textoInput">Nome Completo</div>
-                                            <input type="text" name="" class="entrada">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="caixaInput">
                                             <div class="textoInput">E-mail</div>
-                                            <input type="text" name="" class="entrada">
+                                            <input type="text" name="log-mail" class="entrada">
+                                                <?php
+                                                    if (!(empty($_SESSION['e-log-mail']))) {
+                                                        echo '<br>' .$_SESSION['e-log-mail'];
+                                                        unset($_SESSION['e-log-mail']);
+                                                    }
+                                                ?>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-12">
+                                    <div class="col-sm-12">
                                         <div class="caixaInput">
-                                            <div class="textoInput">Confirmar E-mail</div>
-                                            <input type="text" name="" class="entrada">
+                                            <div class="textoInput">Senha</div>
+                                            <input type="password" name="log-pass" class="entrada">
+                                                <?php
+                                                    if (!(empty($_SESSION['e-log-pass']))) {
+                                                        echo '<br>' .$_SESSION['e-log-pass'];
+                                                        unset($_SESSION['e-log-pass']);
+                                                    }
+                                                ?>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="caixaInput">
-                                            <div class="textoInput">CPF</div>
-                                            <input type="text" name="" class="entrada">
-                                        </div>
+                                <div class="row op-cadastro justify-content-between">
+                                    <div class="col-sm-6">
+                                        <a href="esqueceuSenha.html">Esqueceu a senha?</a>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <a href="cadastro.html">Não possui um cadastro? Solicite um.</a>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-12">
+                                    <div class="col-lg-6 col-md-6 hvr-bounce-in">
                                         <div class="caixaInput">
-                                            <div class="textoInput">Telefone/Celular</div>
-                                            <input type="text" name="" class="entrada">
+                                            <input type="submit" value="Entrar" class="btn-login">
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="caixaInput">
-                                            <div class="textoInput">Endereço</div>
-                                            <input type="text" name="" class="entrada">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-6 hvr-bounce-in">
-                                        <div class="caixaInput">
-                                            <input type="submit" value="Enviar" class="btn-login">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 hvr-bounce-out">
+                                    <div class="col-lg-6 col-md-6 hvr-bounce-out">
                                         <div class="caixaInput">
                                             <input type="button" value="Voltar" onClick="history.go(-1)" class="btn-login">
                                         </div>
@@ -196,5 +187,4 @@
         <script src="js/bootstrap.js"></script>
         <script src="js/functions.js"></script>
     </body>
-
 </html>
