@@ -5,14 +5,11 @@ body{
     background-color: #0971B2;
 }
 
-.titulo{
+.tituloCadastro{
     padding-top: 15vh;
     text-align: center;
 }
 
-.row {
-    margin-left: 0px;
-}
 
 /* Barra de Contatos */
 .sidebar-contact{

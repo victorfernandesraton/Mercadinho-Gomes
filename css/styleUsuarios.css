@@ -9,7 +9,7 @@ body{
 
 /* Usuários, Cadastro, Esqueceu a senha, Alterar Informações */
     .caixaForm{
-        padding: 10vh 10vw 3vh 10vw ;
+        padding: 11vh 17vw 10.5vh 17vw ;
     }
     h1{
         margin: 7vh 0;
@@ -46,7 +46,7 @@ body{
         opacity: 1;
         color: white;
     }
-    .btn-login{
+    .btn-login, .btn-senha{
         width: 80%;
         margin-left: 10%;
         background:  white;
@@ -62,6 +62,12 @@ body{
         margin-top: 7vh;
     }
 /* Fim Usuários, Cadastro, Esqueceu a senha, Alterar Informações */
+
+/* Apenas Esqueceu a Senha */
+    .btn-senha{
+        margin-bottom: -2vh;
+    }
+/* Fim de Esqueceu a senha */
 
 /* Apenas Cadastro */
     .op-cadastro, .op-cadastro a{
@@ -90,6 +96,9 @@ body{
     h1{
         font-size: 30px;
     }
+    /* .caixaForm{
+        padding: 10vh 10vw 3vh 10vw ;
+    } */
 }
 
 @media(min-width: 576px) and (max-width: 767.99px){
@@ -102,6 +111,9 @@ body{
     h1{
         font-size: 40px;
     }
+    /* .caixaForm{
+        padding: 10vh 10vw 3vh 10vw ;
+    } */
 }
 
 @media(min-width: 768px) and (max-width: 991.99px){
@@ -111,6 +123,9 @@ body{
     .cadastro{
         margin-left: -7vw;
     }
+    /* .caixaForm{
+        padding: 10vh 10vw 3vh 10vw ;
+    } */
 }
 
 @media(min-width: 992px) and (max-width: 1199.9px){
@@ -129,8 +144,29 @@ body{
     }   
 }
 
-@media(min-height: 885px){
-    .caixaForm{
-        margin-bottom: 15vh;
+@media (min-height: 885px){
+    .caixaForm {
+        margin-bottom: 6vh;
+        padding: 11vh 21vw 10.5vh 21vw;
+    }
+}
+
+@media(min-width: 1200px){
+    .caixaForm {
+        padding-top: 11vh;
+        padding-left: 20vw;
+    }
+}
+
+@media(min-width: 1500px){
+    .caixaForm {
+        padding: 11vh;
+    }
+}
+
+@media(min-width: 2000px){
+    .caixaForm {
+        padding: 11vh;
+        padding: 11vh 3.65vw 10.5vh;
     }
 }
