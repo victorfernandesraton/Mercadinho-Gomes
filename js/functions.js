@@ -24,15 +24,7 @@ $(".entrada").focus(function(){
     }
 });
 
-
-
-
-
-
-
-
-// image gallery
-// init the state from the input
+// LISTA DE PRODUTOS
 $(".image-checkbox").each(function () {
     if ($(this).find('input[type="checkbox"]').first().attr("checked")) {
         $(this).addClass('image-checkbox-checked');
@@ -42,11 +34,16 @@ $(".image-checkbox").each(function () {
     }
 });
 
-// sync the state to the input
 $(".image-checkbox").on("click", function (e) {
-    $(this).toggleClass('image-checkbox-checked');
-    var $checkbox = $(this).find('input[type="checkbox"]');
-    $checkbox.prop("checked", !$checkbox.prop("checked"))
-
+    if ($(this).hasClass('image-checkbox-checked')) {
+        $(this).removeClass('image-checkbox-checked');
+        $(this).find('input[type="checkbox"]').first().removeAttr("checked");
+    }
+    else {
+        $(this).addClass('image-checkbox-checked');
+        $(this).find('input[type="checkbox"]').first().attr("checked", "checked");
+    }
     e.preventDefault();
 });
+
+
