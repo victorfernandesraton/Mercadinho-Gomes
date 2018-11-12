@@ -1,0 +1,131 @@
+.form-icon
+{
+    height: 4vh;
+}
+label 
+{
+    margin-top: 1vh;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 2.6vh;
+    
+    color: #000000;
+    
+}
+
+button 
+{
+padding: 0;
+}
+table 
+{
+    text-align: center;
+    font-size: 3vh;
+}
+th
+{
+    border: solid 0.2vh;
+    background-color: #0971B2;
+    color: #ffffff;
+}
+
+td 
+{
+    border: solid 0.2vh;
+    background-color: #ffffff;
+}
+
+.form-group 
+{
+margin: 15vh 0 0 40vh;
+
+}
+
+.table-control 
+{
+    
+    border-radius: 4vh;
+    width: auto;
+    margin: 5vh 10vh 0 40vh; 
+}
+
+.table-id 
+{
+    width: 10vh;
+}
+.table-nome 
+{
+    width: 40vh;
+}
+.table-date
+{
+    width: 30vh;
+    margin: 0;
+}
+.table-preco
+{
+    width: 30vh;
+}
+.table-edit
+{
+    width: 50vh;
+    text-align: center;
+    
+}
+.table-edit-icon 
+{
+    text-align: initial;
+    color: #000000;
+    margin: 1vh;
+}
+.table-edit-icon:hover
+{
+/* background-color: #0971B2;
+ text-decoration: none; */
+ color: #000000;
+ text-decoration: underline;
+}
+.form-control 
+{
+    border-radius: 4vh;
+    font-size: 3vh;
+    margin-top: 1vh;
+}
+.imput-select 
+{
+    width: 50vh;
+   
+}
+.imput-serach 
+{
+    width: 50vh;
+    margin-left: 10vh;  
+    top: 1vh; 
+}
+
+.imput-order 
+{
+    width: 50vh;
+    margin-left: 20vh;
+}
+
+.label-serach
+{
+    margin-left: 12vh;
+}
+
+.label-order
+{
+    margin-left: 20vh;
+}
+.btn 
+{
+    border-radius: 6vh;
+    font-size: 4vh;
+    height: 6vh;
+    background-color: #0971B2;
+    padding: 0vh 1vh 0vh 1vh;
+    margin: 4vh 0vh 0 0;
+}

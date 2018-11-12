@@ -1,0 +1,70 @@
+label 
+{
+    margin-top: 1vh;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 18px;
+    
+    color: #000000;
+    
+}
+
+button 
+{
+padding: 0;
+}
+
+.form-group 
+{
+margin: 20vh 0 0 65vh;
+
+}
+
+.form-control 
+{
+    height: 100%;
+    border-radius: 4vh;
+    width: 100vh;
+    font-size: 3vh;
+    margin-top: 1vh;
+}
+
+
+.btn 
+{
+    border-radius: 6vh;
+    font-size: 4vh;
+    height: 6vh;
+    background-color: #0971B2;
+    padding: 0vh 3vh 0vh 3vh;
+    margin: 3vh 0 0 0;
+}
+
+select
+{
+    font-size: 2vh;
+    padding: 0 0 0 0;
+    color: #0971B2;
+}
+
+
+  input[type='file']{
+    background-color: #ffffff;
+    border-radius: 2vh;
+    cursor: pointer;
+    width: 100vh;
+  }
+
+  .custom-file-label 
+  {
+    border-radius: 2vh;
+  }
+
+  .label-file
+  {
+      margin: 2.5vh 2vh 0 2vh;
+  }
+
+  

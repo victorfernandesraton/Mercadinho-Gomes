@@ -1,0 +1,105 @@
+label 
+{
+    margin-top: 1vh;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 3vh;
+    width: 70vh;
+    color: #000000;
+    
+}
+h1
+{
+    top: -10vh;
+}
+
+button 
+{
+padding: 0;
+}
+.form-group 
+{
+margin: 15vh 0 0 65vh;
+
+}
+
+.form-control 
+{
+    border-radius: 4vh;
+    width: 110vh;
+    font-size: 4vh;
+    margin-top: 0vh;
+}
+
+
+.imput-cpf 
+{
+    width: 40vh;
+}
+
+.row 
+{
+    width: auto;
+}
+
+.label-cpf 
+{
+    margin-left:0vh;
+}
+
+.label-confirm-mail 
+{
+    width: 54vh;
+}
+
+.label-tel 
+{
+    margin-left: 0vh;;
+}
+
+.imput-senha 
+{
+    width: 49vh;
+}
+.imput-end 
+{
+    width: 70vh;
+}
+
+.imput-email
+{
+    width: 60vh;
+}
+
+.imput-confirm-senha 
+{
+    width: 49vh;
+    margin-left: 15vh;
+}
+
+.label-confirm-senha 
+{
+    margin-left: 17vh;
+
+}
+
+.imput-debit 
+{
+    margin-top: 0vh;
+    width: 47.5vh;
+    margin-left: 0vh;
+}
+
+
+.btn 
+{
+    border-radius: 6vh;
+    font-size: 4vh;
+    height: 6vh;
+    background-color: #0971B2;
+    padding: 0vh 3vh 0vh 3vh;
+    margin: 3vh 23vh 0 0;
+    left: 30vh;
+}
